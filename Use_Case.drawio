@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-16T20:45:19.664Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="eF7YBB-WZwHki91Pp18i" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-16T20:46:38.983Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="Dy08vQenibt_JMMfoyWG" version="20.6.0" type="github">
   <diagram id="58f33SXFiDlBFoKd3XPx" name="Users">
     <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -75,7 +75,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-18" value="Change Profile Information" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="283.3399999999999" y="70" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="156.6699999999999" y="50" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-19" value="" style="endArrow=block;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;jumpSize=10;strokeWidth=1;dashed=1;" parent="1" source="k-RthZha8JASxXYrEx0w-18" target="k-RthZha8JASxXYrEx0w-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -93,13 +93,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-28" value="Check Current value" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="410.01" y="100" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="433.33" y="100" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-29" value="Check Minimum value" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="566.6600000000001" y="80" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="590.0000000000001" y="80" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-32" value="Check Maximum value" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="660" y="140" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="680" y="140" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-33" value="" style="endArrow=open;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;dashed=1;" parent="1" source="k-RthZha8JASxXYrEx0w-28" target="k-RthZha8JASxXYrEx0w-8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -175,6 +175,15 @@
         <mxCell id="YYDo64wYPFUImArEmN9n-33" value="&amp;lt;&amp;lt; extend &amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="YYDo64wYPFUImArEmN9n-32" vertex="1" connectable="0">
           <mxGeometry x="-0.1749" relative="1" as="geometry">
             <mxPoint x="22" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0htoruDPeXQnnS4D7jM5-2" value="View Profile &lt;br&gt;Information" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="299.9999999999999" y="60" width="133.33" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="0htoruDPeXQnnS4D7jM5-3" value="" style="endArrow=block;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;endFill=0;jumpSize=10;strokeWidth=1;dashed=1;" edge="1" parent="1" source="0htoruDPeXQnnS4D7jM5-2" target="k-RthZha8JASxXYrEx0w-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="233.3349999999998" y="110" as="sourcePoint" />
+            <mxPoint x="360.0050000000001" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
