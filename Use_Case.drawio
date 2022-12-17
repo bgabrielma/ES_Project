@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-17T19:37:28.397Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="uWznd_ljTC2GXc6iV-Ap" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-17T19:52:34.238Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="xHGcnL1Pv6NPUSfgBkuZ" version="20.7.4" type="github">
   <diagram id="58f33SXFiDlBFoKd3XPx" name="Users">
     <mxGraphModel dx="1434" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -34,10 +34,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-8" value="View Coins information" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="870.0000000000001" y="610" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="970.0000000000001" y="550" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-11" value="View News" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="566.67" y="600" width="133.33" height="60" as="geometry" />
+          <mxGeometry x="590" y="640" width="133.33" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-12" value="" style="endArrow=open;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;dashed=1;" parent="1" source="k-RthZha8JASxXYrEx0w-2" target="k-RthZha8JASxXYrEx0w-8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -93,13 +93,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-28" value="Check Current value" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="459.9999999999999" y="320" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="469.9999999999999" y="290" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-29" value="Check Minimum value" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="550.0000000000001" y="230" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="590.0000000000001" y="170" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-32" value="Check Maximum value" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="700" y="190" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="760" y="100" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="k-RthZha8JASxXYrEx0w-33" value="" style="endArrow=open;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.092;entryY=0.24;entryDx=0;entryDy=0;endFill=0;dashed=1;entryPerimeter=0;" parent="1" source="k-RthZha8JASxXYrEx0w-28" target="k-RthZha8JASxXYrEx0w-8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -150,10 +150,10 @@
           <mxGeometry x="400" y="20" width="300" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YYDo64wYPFUImArEmN9n-20" value="Filter By Coins" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="856.67" y="190" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="940" y="80" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="YYDo64wYPFUImArEmN9n-25" value="Filter by time interval&lt;br&gt;&lt;b&gt;Max 2 weeks&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1086.67" y="350" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="1030" y="210" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="YYDo64wYPFUImArEmN9n-30" value="" style="endArrow=open;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endFill=0;dashed=1;entryX=0.707;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="YYDo64wYPFUImArEmN9n-20" target="k-RthZha8JASxXYrEx0w-8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -186,10 +186,10 @@
             <mxPoint x="360.0050000000001" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0htoruDPeXQnnS4D7jM5-5" value="" style="endArrow=open;html=1;rounded=0;endFill=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="0htoruDPeXQnnS4D7jM5-7" edge="1" target="k-RthZha8JASxXYrEx0w-8">
+        <mxCell id="0htoruDPeXQnnS4D7jM5-5" value="" style="endArrow=open;html=1;rounded=0;endFill=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="0htoruDPeXQnnS4D7jM5-7" edge="1" target="k-RthZha8JASxXYrEx0w-11">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="692" y="686" as="sourcePoint" />
-            <mxPoint x="1000" y="630" as="targetPoint" />
+            <mxPoint x="660" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0htoruDPeXQnnS4D7jM5-6" value="&amp;lt;&amp;lt; extend &amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="0htoruDPeXQnnS4D7jM5-5" vertex="1" connectable="0">
@@ -198,7 +198,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="0htoruDPeXQnnS4D7jM5-7" value="Filter by time interval&lt;br&gt;&lt;b&gt;Max 1 Month&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="990" y="240" width="133.33" height="50" as="geometry" />
+          <mxGeometry x="590" y="530" width="133.33" height="50" as="geometry" />
         </mxCell>
         <mxCell id="0htoruDPeXQnnS4D7jM5-10" value="Receive notifications on Whatsapp" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="600" width="179.33" height="50" as="geometry" />
