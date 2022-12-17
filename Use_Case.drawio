@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-17T19:52:34.238Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="xHGcnL1Pv6NPUSfgBkuZ" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-17T19:53:06.637Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="qJFXcC-fx-TI1O7-ZfZ4" version="20.7.4" type="github">
   <diagram id="58f33SXFiDlBFoKd3XPx" name="Users">
     <mxGraphModel dx="1434" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -147,7 +147,7 @@
           <mxGeometry x="70" y="650" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YYDo64wYPFUImArEmN9n-16" value="&lt;span id=&quot;docs-internal-guid-30094b55-7fff-c7a5-037e-d8dcce5be333&quot;&gt;&lt;span style=&quot;font-family: Arial; color: rgb(13, 14, 16); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;CryptoIsCool&#39;s Portal System&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="400" y="20" width="300" height="30" as="geometry" />
+          <mxGeometry x="550" y="30" width="300" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YYDo64wYPFUImArEmN9n-20" value="Filter By Coins" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="940" y="80" width="133.33" height="50" as="geometry" />
