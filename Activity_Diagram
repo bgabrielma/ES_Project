@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-19T13:30:44.781Z" agent="5.0 (Windows)" etag="vRyaiqf65ctrhxTV0SAm" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-19T13:31:56.456Z" agent="5.0 (Windows)" etag="XZNnqlpDM8XxFrC_rpiQ" version="20.6.0" type="github">
   <diagram name="Page-1" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
     <mxGraphModel dx="1185" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -95,6 +95,18 @@
         <mxCell id="pzC1fPXJodnUPR6Dq2qd-43" style="edgeStyle=none;rounded=0;html=1;labelBackgroundColor=none;startArrow=none;startFill=0;startSize=5;endArrow=classicThin;endFill=1;endSize=5;jettySize=auto;orthogonalLoop=1;strokeWidth=1;fontFamily=Verdana;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="pzC1fPXJodnUPR6Dq2qd-11" source="sSCXmuPrTFxCnAJqb0M4-4" target="pzC1fPXJodnUPR6Dq2qd-45" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="497.49999999999955" y="840" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sSCXmuPrTFxCnAJqb0M4-9" value="send notification" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;arcSize=50;" vertex="1" parent="pzC1fPXJodnUPR6Dq2qd-11">
+          <mxGeometry x="190" y="270" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sSCXmuPrTFxCnAJqb0M4-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="pzC1fPXJodnUPR6Dq2qd-11" source="pzC1fPXJodnUPR6Dq2qd-12" target="sSCXmuPrTFxCnAJqb0M4-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="210" />
+              <mxPoint x="240" y="210" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="pzC1fPXJodnUPR6Dq2qd-31" value="Register" style="swimlane;html=1;startSize=20;" parent="pzC1fPXJodnUPR6Dq2qd-1" vertex="1">
