@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-19T13:32:53.238Z" agent="5.0 (Windows)" etag="Bdvei_wv5oQE7GoO9ND9" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-19T13:35:10.076Z" agent="5.0 (Windows)" etag="b7jyEYeP2BzY57KlAkgw" version="20.6.0" type="github">
   <diagram name="Page-1" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
     <mxGraphModel dx="1673" dy="918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -36,9 +36,9 @@
             <mxPoint x="175" y="517" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pzC1fPXJodnUPR6Dq2qd-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="pzC1fPXJodnUPR6Dq2qd-2" source="pzC1fPXJodnUPR6Dq2qd-65" edge="1">
+        <mxCell id="pzC1fPXJodnUPR6Dq2qd-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="pzC1fPXJodnUPR6Dq2qd-2" source="pzC1fPXJodnUPR6Dq2qd-65" target="pzC1fPXJodnUPR6Dq2qd-67" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="75" y="537" as="targetPoint" />
+            <mxPoint x="80" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="pzC1fPXJodnUPR6Dq2qd-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="pzC1fPXJodnUPR6Dq2qd-2" source="pzC1fPXJodnUPR6Dq2qd-65" target="pzC1fPXJodnUPR6Dq2qd-70" edge="1">
@@ -48,7 +48,7 @@
           <mxGeometry x="178" y="457" width="147" height="10" as="geometry" />
         </mxCell>
         <mxCell id="pzC1fPXJodnUPR6Dq2qd-67" value="View news interface" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;arcSize=50;" parent="pzC1fPXJodnUPR6Dq2qd-2" vertex="1">
-          <mxGeometry x="15" y="490" width="120" height="30" as="geometry" />
+          <mxGeometry x="30" y="537" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="pzC1fPXJodnUPR6Dq2qd-70" value="View Profile interface" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;arcSize=50;" parent="pzC1fPXJodnUPR6Dq2qd-2" vertex="1">
           <mxGeometry x="340" y="537" width="120" height="30" as="geometry" />
