@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-21T12:34:02.649Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="P02WPwUOZz7tbZTlJxNO" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-21T12:42:15.300Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="VUGsT9zdLAyigaYVBzKJ" version="20.7.4" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="1674" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -40,7 +40,7 @@
         <mxCell id="IO16yfaYJcbksJ0PaBm1-2" value="moedas" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="20" y="410" width="330" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="IO16yfaYJcbksJ0PaBm1-3" value="+ Show the coin information up to two weeks &#xa;+ Show  news about the coins talked in the previous &#xa;topic up to one month" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="IO16yfaYJcbksJ0PaBm1-2" vertex="1">
+        <mxCell id="IO16yfaYJcbksJ0PaBm1-3" value="+ show the coin information up to two weeks &#xa;+ show  news about the coins talked in the previous &#xa;topic up to one month" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="IO16yfaYJcbksJ0PaBm1-2" vertex="1">
           <mxGeometry y="26" width="330" height="54" as="geometry" />
         </mxCell>
         <mxCell id="IO16yfaYJcbksJ0PaBm1-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="IO16yfaYJcbksJ0PaBm1-2" vertex="1">
@@ -74,6 +74,18 @@
         </mxCell>
         <mxCell id="R11sex2J8XhDxBknBM0T-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="R11sex2J8XhDxBknBM0T-1">
           <mxGeometry y="98" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="R11sex2J8XhDxBknBM0T-5" value="Noticias" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="570" width="240" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="R11sex2J8XhDxBknBM0T-6" value="+ filter that filters specified coin during&#xa;a certain time of maxium two weeks" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="R11sex2J8XhDxBknBM0T-5">
+          <mxGeometry y="26" width="240" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="R11sex2J8XhDxBknBM0T-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="R11sex2J8XhDxBknBM0T-5">
+          <mxGeometry y="70" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="R11sex2J8XhDxBknBM0T-8" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="R11sex2J8XhDxBknBM0T-5">
+          <mxGeometry y="90" width="240" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
