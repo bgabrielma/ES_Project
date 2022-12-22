@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-22T09:41:23.268Z" agent="5.0 (Windows)" etag="dxJ_qiGgBaiuKjbSeLjM" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-22T09:44:47.039Z" agent="5.0 (Windows)" etag="jDX8_Ew1HLg384qWcrOn" version="20.7.4" type="github">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="1195" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -31,6 +31,39 @@
         <mxCell id="fIjWx73l_MTM7b6kRY-5-9" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="fIjWx73l_MTM7b6kRY-5-8">
           <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
             <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fIjWx73l_MTM7b6kRY-5-10" value="Api server-Coinbase" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="490" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="fIjWx73l_MTM7b6kRY-5-11" value="Database" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="760" width="310" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="fIjWx73l_MTM7b6kRY-5-14" value="Account" style="html=1;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="687" y="810" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fIjWx73l_MTM7b6kRY-5-15" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="fIjWx73l_MTM7b6kRY-5-14">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fIjWx73l_MTM7b6kRY-5-16" value="Coins" style="html=1;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="535" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fIjWx73l_MTM7b6kRY-5-17" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="fIjWx73l_MTM7b6kRY-5-16">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fIjWx73l_MTM7b6kRY-5-18" value="Api server-news" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="230" width="240" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="fIjWx73l_MTM7b6kRY-5-19" value="News" style="html=1;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="280" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fIjWx73l_MTM7b6kRY-5-20" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="fIjWx73l_MTM7b6kRY-5-19">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
