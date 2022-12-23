@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-12-23T09:02:55.420Z" agent="5.0 (Windows)" etag="uZi0mGGV_b8y9bm4cnPY" version="20.7.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-12-23T09:26:05.796Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="45Mm_gVP6yUvqapHruh8" version="20.7.4" type="github" pages="2">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
-    <mxGraphModel dx="1434" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1195" dy="657" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -30,13 +30,14 @@
         <mxCell id="wd0n0IJal98J9tUCrlXF-8" value="&lt;div&gt;&amp;lt;&amp;lt;device&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;External Microservices&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="875" width="300" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="wd0n0IJal98J9tUCrlXF-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="wd0n0IJal98J9tUCrlXF-10" edge="1">
+        <mxCell id="wd0n0IJal98J9tUCrlXF-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="910" y="760" as="targetPoint" />
+            <mxPoint x="910" y="757" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="940" y="980" />
-              <mxPoint x="940" y="760" />
+              <mxPoint x="940" y="977" />
+              <mxPoint x="940" y="757" />
             </Array>
+            <mxPoint x="1010" y="977" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wd0n0IJal98J9tUCrlXF-10" value="&lt;p style=&quot;margin: 6px 0px 0px; font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 13px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 13px;&quot;&gt;&lt;b&gt;Coin Information Service&lt;/b&gt;&lt;/p&gt;" style="align=center;overflow=fill;html=1;dropTarget=0;fontStyle=0;fontSize=13;" parent="1" vertex="1">
@@ -63,9 +64,10 @@
         <mxCell id="wd0n0IJal98J9tUCrlXF-15" value="&lt;div&gt;&amp;lt;&amp;lt;device&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Internal Microservices&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
           <mxGeometry x="960" y="430" width="280" height="368.5" as="geometry" />
         </mxCell>
-        <mxCell id="wd0n0IJal98J9tUCrlXF-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;targetPerimeterSpacing=20;sourcePerimeterSpacing=20;endSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=box;startFill=0;" parent="1" source="wd0n0IJal98J9tUCrlXF-17" edge="1">
+        <mxCell id="wd0n0IJal98J9tUCrlXF-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;targetPerimeterSpacing=20;sourcePerimeterSpacing=20;endSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=box;startFill=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="890" y="870" as="targetPoint" />
+            <mxPoint x="890" y="867" as="targetPoint" />
+            <mxPoint x="990" y="542" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wd0n0IJal98J9tUCrlXF-17" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 11px;&quot;&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;&lt;b&gt;User Information Service&lt;/b&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" parent="1" vertex="1">
@@ -122,8 +124,8 @@
         </mxCell>
         <mxCell id="wd0n0IJal98J9tUCrlXF-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=-0.003;exitY=0.662;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="510" y="590" as="targetPoint" />
-            <mxPoint x="589.3999999999996" y="769.96" as="sourcePoint" />
+            <mxPoint x="510.6" y="588" as="targetPoint" />
+            <mxPoint x="589.9999999999997" y="767.96" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wd0n0IJal98J9tUCrlXF-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="wd0n0IJal98J9tUCrlXF-30" edge="1">
@@ -136,17 +138,19 @@
             <mxPoint x="910" y="790" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="E2cIgHscmPIjhdGu8iYm-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="wd0n0IJal98J9tUCrlXF-30" edge="1">
+        <mxCell id="E2cIgHscmPIjhdGu8iYm-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="920" y="737" as="targetPoint" />
+            <mxPoint x="920" y="735" as="targetPoint" />
+            <mxPoint x="789.9999999999999" y="735" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="E2cIgHscmPIjhdGu8iYm-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="wd0n0IJal98J9tUCrlXF-30" edge="1">
+        <mxCell id="E2cIgHscmPIjhdGu8iYm-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="910" y="630" as="targetPoint" />
+            <mxPoint x="910" y="636" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="910" y="717" />
+              <mxPoint x="910" y="723" />
             </Array>
+            <mxPoint x="789.9999999999999" y="723" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wd0n0IJal98J9tUCrlXF-30" value="&lt;p style=&quot;margin: 6px 0px 0px; font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 13px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 13px;&quot;&gt;&lt;b&gt;API Gateway Service&lt;/b&gt;&lt;/p&gt;" style="align=center;overflow=fill;html=1;dropTarget=0;fontStyle=0;fontSize=13;" parent="1" vertex="1">
