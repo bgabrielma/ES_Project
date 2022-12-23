@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-12-23T09:54:01.000Z" agent="5.0 (Windows)" etag="xanGxGu5UFJ4gMtZCR_D" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-23T09:58:47.597Z" agent="5.0 (Windows)" etag="1MGViF2BWAP4HdTWGNR1" version="20.7.4" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="2537" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2284" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -89,9 +89,9 @@
             <mxPoint x="780" y="867" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J00o2H0Ra1XBxUk8elXU-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-26">
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;endSize=12;startArrow=box;startFill=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-26">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="480" y="680" as="targetPoint" />
+            <mxPoint x="300" y="867" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="J00o2H0Ra1XBxUk8elXU-26" value="&lt;p style=&quot;margin: 6px 0px 0px; font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 13px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 13px;&quot;&gt;&lt;b&gt;Authentication&lt;/b&gt;&lt;/p&gt;" style="align=center;overflow=fill;html=1;dropTarget=0;fontStyle=0;fontSize=13;" vertex="1" parent="1">
@@ -136,6 +136,15 @@
               <mxPoint x="900" y="636" />
             </Array>
             <mxPoint x="789.9999999999999" y="723" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="790" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="790" />
+              <mxPoint x="430" y="790" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="J00o2H0Ra1XBxUk8elXU-34" value="&lt;p style=&quot;margin: 6px 0px 0px; font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 13px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 13px;&quot;&gt;&lt;b&gt;API Gateway Service&lt;/b&gt;&lt;/p&gt;" style="align=center;overflow=fill;html=1;dropTarget=0;fontStyle=0;fontSize=13;" vertex="1" parent="1">
@@ -202,20 +211,29 @@
         <mxCell id="J00o2H0Ra1XBxUk8elXU-46" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn.educba.com/academy/wp-content/uploads/2019/09/UML-Component-Diagram.jpg;" vertex="1" parent="1">
           <mxGeometry x="1420" y="700" width="920" height="511.31" as="geometry" />
         </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;startArrow=box;startFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="867" as="targetPoint" />
+            <mxPoint x="200" y="867.0588235294117" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="300" y="867" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="J00o2H0Ra1XBxUk8elXU-47" value="&lt;div&gt;Login&lt;/div&gt;&lt;div&gt;&amp;lt;&amp;lt;application&amp;gt;&amp;gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="80" y="835" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J00o2H0Ra1XBxUk8elXU-48" value="&lt;div&gt;Register&lt;/div&gt;&lt;div&gt;&amp;lt;&amp;lt;application&amp;gt;&amp;gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="760" width="120" height="60" as="geometry" />
+          <mxGeometry x="80" y="920" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J00o2H0Ra1XBxUk8elXU-49" value="Profile&lt;div&gt;&amp;lt;&amp;lt;application&amp;gt;&amp;gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="837" width="120" height="60" as="geometry" />
+          <mxGeometry x="80" y="997" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J00o2H0Ra1XBxUk8elXU-50" value="View Coins&lt;br&gt;&lt;div&gt;&amp;lt;&amp;lt;application&amp;gt;&amp;gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="930" width="120" height="60" as="geometry" />
+          <mxGeometry x="80" y="1090" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J00o2H0Ra1XBxUk8elXU-51" value="View News&lt;br&gt;&lt;div&gt;&amp;lt;&amp;lt;application&amp;gt;&amp;gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="1020" width="120" height="60" as="geometry" />
+          <mxGeometry x="80" y="1180" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
