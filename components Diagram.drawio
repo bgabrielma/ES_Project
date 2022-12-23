@@ -1,15 +1,184 @@
-<mxfile host="app.diagrams.net" modified="2022-12-23T09:39:23.845Z" agent="5.0 (Windows)" etag="g8am2KxwafY8JeWqzlXU" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-23T09:42:02.055Z" agent="5.0 (Windows)" etag="hb1RacBeDw67eS_jzudD" version="20.7.4" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="837" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1687" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="J00o2H0Ra1XBxUk8elXU-1" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 11px;&quot;&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;&lt;b&gt;User Information Service&lt;/b&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" vertex="1" parent="1">
-          <mxGeometry x="990" y="505" width="200" height="80" as="geometry" />
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-5" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;Portal Client Module&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="550" width="220" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="J00o2H0Ra1XBxUk8elXU-2" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-1">
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-6" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-5">
           <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
             <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-7" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt; artifact &amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;Scripts&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-5">
+          <mxGeometry x="120" y="60" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-8" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt; artifact &amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;Styles&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="610" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=-0.001;exitY=0.459;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="756.9999999999995" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="977" />
+              <mxPoint x="940" y="757" />
+            </Array>
+            <mxPoint x="1010" y="977" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-12" value="&lt;p style=&quot;margin: 6px 0px 0px; font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 13px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 13px;&quot;&gt;&lt;b&gt;Coin Information Service&lt;/b&gt;&lt;/p&gt;" style="align=center;overflow=fill;html=1;dropTarget=0;fontStyle=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="940" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-13" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-12">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-15" value="&lt;p style=&quot;margin: 6px 0px 0px; font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 13px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 13px;&quot;&gt;&lt;b&gt;News Information Service&lt;/b&gt;&lt;/p&gt;" style="align=center;overflow=fill;html=1;dropTarget=0;fontStyle=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="1040" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-16" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-15">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;targetPerimeterSpacing=20;sourcePerimeterSpacing=20;endSize=12;exitX=-0.003;exitY=0.441;exitDx=0;exitDy=0;startArrow=box;startFill=0;exitPerimeter=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="866.9999999999995" as="targetPoint" />
+            <mxPoint x="980" y="542" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="880" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-19" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 11px;&quot;&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;&lt;b&gt;User Information Service&lt;/b&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="990" y="505" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-20" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-19">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=0;exitY=0.512;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="921" y="636" as="targetPoint" />
+            <mxPoint x="991" y="636.0000000000001" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="921" y="636" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-22" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 11px;&quot;&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;&lt;b&gt;Notifications Service&lt;/b&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="990" y="595" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-23" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-22">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;startArrow=box;startFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="866.9999999999995" as="targetPoint" />
+            <mxPoint x="780" y="867" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-26" value="&lt;p style=&quot;margin: 6px 0px 0px; font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 13px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 13px;&quot;&gt;&lt;b&gt;Authentication&lt;/b&gt;&lt;/p&gt;" style="align=center;overflow=fill;html=1;dropTarget=0;fontStyle=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="590" y="827" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-27" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-26">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-28" value="&lt;p style=&quot;margin: 6px 0px 0px; font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 13px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 13px;&quot;&gt;&lt;b&gt;Audit Log Services&lt;/b&gt;&lt;/p&gt;" style="align=center;overflow=fill;html=1;dropTarget=0;fontStyle=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="990" y="695" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-29" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-28">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=0.001;exitY=0.627;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510.5999999999999" y="588" as="targetPoint" />
+            <mxPoint x="589.9999999999997" y="767.96" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="756.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=0.999;exitY=0.909;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="790" as="targetPoint" />
+            <mxPoint x="790" y="790" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1.002;exitY=0.075;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="636" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="900" y="723" />
+              <mxPoint x="900" y="636" />
+            </Array>
+            <mxPoint x="789.9999999999999" y="723" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-34" value="&lt;p style=&quot;margin: 6px 0px 0px; font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 13px;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px; font-size: 13px;&quot;&gt;&lt;b&gt;API Gateway Service&lt;/b&gt;&lt;/p&gt;" style="align=center;overflow=fill;html=1;dropTarget=0;fontStyle=0;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="590" y="717" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-35" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-34">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-37" value="&lt;p style=&quot;margin: 6px 0px 0px; text-align: center; font-size: 11px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;lt;&amp;lt; component &amp;gt;&amp;gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;font-size: 11px;&quot;&gt;&lt;p style=&quot;text-align: center; margin: 0px 0px 0px 8px;&quot;&gt;&lt;b&gt;Portal Dabase&lt;/b&gt;&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="517" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-38" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" vertex="1" parent="J00o2H0Ra1XBxUk8elXU-37">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1;exitY=0.663;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="680" as="targetPoint" />
+            <mxPoint x="380" y="650" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="480" y="649" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="588" as="targetPoint" />
+            <mxPoint x="500" y="519.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=halfCircle;endFill=0;endSize=6;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=1;exitY=0.227;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="734.8299999999999" as="targetPoint" />
+            <mxPoint x="790" y="734.83" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J00o2H0Ra1XBxUk8elXU-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=-0.002;exitY=0.496;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="J00o2H0Ra1XBxUk8elXU-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="734.8299999999999" as="targetPoint" />
+            <mxPoint x="990" y="734.83" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
       </root>
