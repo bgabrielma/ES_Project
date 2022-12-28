@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-28T00:10:58.325Z" agent="5.0 (Windows)" etag="1QZFmtY--yRSDwYxhO5E" version="20.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-28T00:11:06.814Z" agent="5.0 (Windows)" etag="MlF6deG27njHEDrFDjDB" version="20.7.4" type="github">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="1434" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -66,7 +66,7 @@
           <mxGeometry y="98" width="210" height="26" as="geometry" />
         </mxCell>
         <mxCell id="R11sex2J8XhDxBknBM0T-5" value="Noticias" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="260" y="400" width="160" height="126" as="geometry" />
+          <mxGeometry x="300" y="270" width="160" height="126" as="geometry" />
         </mxCell>
         <mxCell id="R11sex2J8XhDxBknBM0T-6" value="+Title&#xa;+SubTitle&#xa;+Body&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="R11sex2J8XhDxBknBM0T-5" vertex="1">
           <mxGeometry y="26" width="160" height="54" as="geometry" />
