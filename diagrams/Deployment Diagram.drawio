@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-04T18:57:04.484Z" agent="5.0 (Windows)" etag="lDS7-1EDBFHKaNpyyDSq" version="20.8.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-01-04T18:57:12.642Z" agent="5.0 (Windows)" etag="t5vwxtBDtQY2rMcTOOoN" version="20.8.1" type="github" pages="2">
   <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="1434" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
           <mxGeometry x="470" y="447" width="290" height="310" as="geometry" />
         </mxCell>
         <mxCell id="wd0n0IJal98J9tUCrlXF-8" value="&lt;div&gt;&amp;lt;&amp;lt;device&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;External Microservices&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;(Docker - Ubuntu)&lt;/span&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
-          <mxGeometry x="870" y="685" width="300" height="300" as="geometry" />
+          <mxGeometry x="870" y="685" width="300" height="275" as="geometry" />
         </mxCell>
         <mxCell id="wd0n0IJal98J9tUCrlXF-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=box;startFill=0;endArrow=oval;endFill=0;endSize=12;sourcePerimeterSpacing=20;targetPerimeterSpacing=20;exitX=-0.001;exitY=0.459;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wd0n0IJal98J9tUCrlXF-10" edge="1">
           <mxGeometry relative="1" as="geometry">
