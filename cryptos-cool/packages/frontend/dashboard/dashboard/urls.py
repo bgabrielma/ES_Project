@@ -23,5 +23,6 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.Index.as_view(), name='index'),
-    path('bitcoin/',  include("CryptoCoins.urls"))
+    path('bitcoin/',  include("CryptoCoins.urls")),
+    path('news/',  include("CryptoNews.urls"))
 ]

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Crypto is Cool{% endblock %}
+
+{% block links %}
+  <!-- Custom styles for this template-->
+  <link href="/static/css/sb-admin.css" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<!-- DataTables Example -->
+<div class="card mb-3">
+    <div class="card-header">
+      <i class="fas fa-table"></i>
+      Data Table Example</div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>description</th>
+              <th>Office</th>
+              <th>Age</th>
+              <th>Start date</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Office</th>
+              <th>Age</th>
+              <th>Start date</th>
+              <th><h1>Hello,</h1></th>
+              
+
+            </tr>
+          </tfoot>
+          <tbody>
+            
+            {% for key in title %}
+            {% for value in description %}
+            <tr>
+              <td>{{ key }}</td>
+
+              
+              <td>{{ value }}</td>
+              
+              {% endfor %}
+                {% endfor %}
+             
+      
+            </tr>
+    
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+  </div>
+
+</div>
+{% endblock %}
