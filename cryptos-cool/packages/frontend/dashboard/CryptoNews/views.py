@@ -18,12 +18,12 @@ class news(View):
                 'description' :  [self.response["articles"][0]["description"]],
                  'content': [self.response["articles"][0]["content"]]}
         self.context = self.checkall(dict)
-        self.dict2 = {"news" : self.context}
+        self.dict2 = {"news" : dict}
         print(self.dict2)
         # print(response["articles"])
     
     def get(self, request):
-        return render(request,self.template_name,self.context)   
+        return render(request,self.template_name,self.dict2)   
     
     def checkall(self,dict):
 

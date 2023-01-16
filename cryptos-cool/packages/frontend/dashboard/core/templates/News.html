@@ -19,40 +19,33 @@
             <tr>
               <th>Title</th>
               <th>description</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
+              <th>Content</th>
+
             </tr>
           </thead>
           <tfoot>
             <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th><h1>Hello,</h1></th>
+              <th>Title</th>
+              <th>description</th>
+              <th>Content</th>
+  
               
 
             </tr>
           </tfoot>
           <tbody>
             
-            {% for key in title %}
-            {% for value in description %}
+            
+            {% for key,value in news.items %}
             <tr>
-              <td>{{ key }}</td>
-
+              <td>{{value.2}}</td>
               
-              <td>{{ value }}</td>
-              
-              {% endfor %}
-                {% endfor %}
-             
       
+              <td>{{value.1}}</td>
+
+              <td>{{value.0}}</td>
             </tr>
-    
+            {% endfor %}
             
           </tbody>
         </table>
