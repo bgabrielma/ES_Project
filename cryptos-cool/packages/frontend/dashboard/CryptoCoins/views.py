@@ -14,4 +14,4 @@ class bitcoin(View):
 
   
     def get(self, request):
-        return render(request,self.template_name,"{'name':'lopes'}")   
+        return render(request,self.template_name)   

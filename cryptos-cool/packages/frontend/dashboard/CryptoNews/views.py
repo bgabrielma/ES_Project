@@ -19,6 +19,7 @@ class news(View):
                  'content': [self.response["articles"][0]["content"]]}
         self.context = self.checkall(dict)
         self.dict2 = {"news" : dict}
+        self.dict2 = {"pages" : self.pagination()}
         print(self.dict2)
         # print(response["articles"])
     
@@ -32,3 +33,10 @@ class news(View):
             dict["description"].append(self.response["articles"][k]["description"])  
             dict["content"].append(self.response["articles"][k]["content"])  
         return dict
+    def pagination(self):
+        pags = self.response["totalResults"] / 10
+        if pags >= 10:
+            pags= 10
+            return pags
+        else:
+            return pags
