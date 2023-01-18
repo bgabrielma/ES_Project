@@ -7,54 +7,35 @@
   <link href="/static/css/sb-admin.css" rel="stylesheet">
 {% endblock %}
 {% block body %}
-
-
-<!-- DataTables Example -->
-<div class="card mb-3">
-    <div class="card-header">
-      <i class="fas fa-table"></i>
-      Data Table Example</div>
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>description</th>
-              <th>Content</th>
-
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <th>Title</th>
-              <th>description</th>
-              <th>Content</th>
-  
-              
-
-            </tr>
-          </tfoot>
-          <tbody>
-            
-            
-            {% for key,value in news.items %}
-            <tr>
-              <td>{{value.2}}</td>
-              
-      
-              <td>{{value.1}}</td>
-
-              <td>{{value.0}}</td>
-            </tr>
-            {% endfor %}
-            
-          </tbody>
-        </table>
-      </div>
+<div class="container-fluid">
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active">
+        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <ul class="list-group p-4">
+  {% for field in news %}
+  <a href="{{field.url}}" target="_blank">
+    <div class="media mt-4 mb-4">
+        <img class="mr-3 rounded" style="width: 200px;" src="{{ field.urlToImage }}" alt="Generic placeholder image">
+        <div class="media-body">
+          <h5 class="mt-0">{{ field.title }} </h5>
+          {{ field.content }}
+        </div>
     </div>
-    <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-  </div>
-
+  </a>
+  {% endfor %}
+  </ul>
 </div>
+
 {% endblock %}
