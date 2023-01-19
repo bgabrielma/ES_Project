@@ -16,7 +16,6 @@ def get_coins(type, endtime):
     endtime = int number of days
     """
     url = build_url(flask_request.args, type, endtime)
-    print(url)
     return requests.get(url).json()
 
 if __name__ == "__main__":
