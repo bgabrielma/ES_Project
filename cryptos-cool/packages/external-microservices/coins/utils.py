@@ -1,15 +1,10 @@
-import os
-
-import requests
-
-
-import urllib.parse
 import datetime
 
-api_key = os.getenv("COINS_API")
-DEFAULT_PAGE_SIZE = 10
+import json
+from collections import defaultdict
+import requests
 
-def build_url(args: dict, type, endtime):
+def build_url(type, endtime):
     # 1 day = 86,400 seconds
     current_time = datetime.datetime.now().timestamp()
 
@@ -17,28 +12,44 @@ def build_url(args: dict, type, endtime):
         endtime = current_time - (endtime * 86400)
         response = endpoint_builder(type, current_time, endtime)
         response = response.json()
+        response = dict_structure(response)
     else:
-        firstWeek =  endpoint_builder(type, current_time)
-        endtime = endtime - 7
+        firstloop = current_time - (7 * 86400)
+        print(firstloop)
+        firstWeek =  endpoint_builder(type, current_time, firstloop)
+        firstWeek = firstWeek.json()
+        response = dict_structure(firstWeek)
+        # ex:
+        # 12-7 = 5 dias que faltam
+        newendtime = endtime - 7
+        # novo tempo onde vai começar a proxima pesquisa remove-se os 7 dias ja pesquisados
         newTime = current_time - (7 * 86400)
-        endtime = current_time - (endtime * 86400)
-        secondWeek = endpoint_builder(type, newTime, endtime)
+        # adicionar os 5 dias que faltam
+        endtime = newTime - (newendtime * 86400)
+        secondWeek = endpoint_builder(type, newTime, endtime )
         secondWeek = secondWeek.json()
+        
+        response = dict_structure(secondWeek, response)
 
     return response
     # https://api.binance.com/api/v3/uiKlines
 
-def endpoint_builder(type, current_time, endtime = 7):
-    endtime = endtime * 1000
-    current_time = current_time * 1000
-    return requests.get("https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=1m&endTime={endtime}&startTime={current_time}")
+def endpoint_builder(type, current_time, endtime):
+    
+    endtime = int(endtime) * 1000
+    current_time = int(current_time) * 1000
+    print(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=1m&endTime={current_time}&startTime={endtime}")
+    return requests.get(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=1m&endTime={current_time}&startTime={endtime}")
 
-def dict_structure(response):
-    dict = {
-        "from": response[0],
-        "to":response[1]
-        ""} 
-
+def dict_structure(response, dict_sub = defaultdict(list)):
+    for k in range(0, len(response[0])):
+        dict_sub["From"].append(response[k][0])
+        dict_sub["To"].append(response[k][6])
+        dict_sub["Open"].append(response[k][1])
+        dict_sub["High"].append(response[k][2])
+        dict_sub["Close"].append(response[k][3])
+  
+    return dict_sub
 
     #  1499040000000,      // Kline open time
     # "0.01634790",       // Open price
