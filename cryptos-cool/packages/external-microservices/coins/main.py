@@ -8,14 +8,14 @@ load_dotenv()
 
 app = Flask("coins")
 
-@app.route("/coins/<string:type><int:endtime>", methods=['GET'])
+@app.route("/coins/<string:type>/<int:endtime>", methods=['GET'])
 def get_coins(type, endtime):
     """
     Args: 
     type = type of crypto coin
     endtime = int number of days
     """
-    url = build_url(flask_request.args, type, endtime)
+    url = build_url(type, endtime)
     return requests.get(url).json()
 
 if __name__ == "__main__":
