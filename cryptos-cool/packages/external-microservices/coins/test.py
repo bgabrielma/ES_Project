@@ -13,21 +13,22 @@ def build_url(type, endtime):
     else:
         firstWeek =  endpoint_builder(type, current_time, current_time + (endtime * 86400))
         firstWeek = firstWeek.json()
+        print(firstWeek)
         endtime = endtime - 7
         newTime = current_time - (7 * 86400)
         endtime = current_time - (endtime * 86400)
         secondWeek = endpoint_builder(type, newTime, endtime)
         secondWeek = secondWeek.json()
+        print(secondWeek)
 
-    return firstWeek
+    return response
     # https://api.binance.com/api/v3/uiKlines
 
 def endpoint_builder(type, current_time, endtime):
     
     endtime = int(endtime) * 1000
     current_time = int(current_time) * 1000
-    api = f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=1m&endTime={endtime}&startTime={current_time}"
-    print(api)
-    return requests.get(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=1m&endTime={endtime}&startTime={current_time}")
 
-print(build_url("BTC",14))
+    return requests.get(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=1m&endTime={current_time}&startTime={endtime}")
+
+print(build_url("BTC",6))
