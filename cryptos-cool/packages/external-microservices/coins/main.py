@@ -8,7 +8,7 @@ load_dotenv()
 
 app = Flask("coins")
 
-@app.route("/coins/<str:type><int:endtime>", methods=['GET'])
+@app.route("/coins/<string:type><int:endtime>", methods=['GET'])
 def get_coins(type, endtime):
     """
     Args: 

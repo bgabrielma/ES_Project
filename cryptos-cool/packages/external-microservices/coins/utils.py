@@ -20,11 +20,11 @@ def build_url(type, endTime = 7):
         response = dict_structure(firstWeek)
         # ex:
         # 12-7 = 5 dias que faltam
-        newendTime = endTime - 7
+        newEndTime = endTime - 7
         # novo tempo onde vai começar a proxima pesquisa remove-se os 7 dias ja pesquisados
         newTime = currentTime - (7 * 86400)
         # adicionar os 5 dias que faltam
-        endTime = newTime - (newendTime * 86400)
+        endTime = newTime - (newEndTime * 86400)
         secondWeek = endpoint_builder(type, newTime, endTime )
        
         
