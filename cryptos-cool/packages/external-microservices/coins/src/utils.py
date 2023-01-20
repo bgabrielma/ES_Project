@@ -13,7 +13,7 @@ def get_data(type, days = 7):
         end_time = current_time - (days * FULL_DAY_SECONDS)
         response = endpoint_builder(type, current_time, end_time)
        
-        response = dict_structure(response)
+        return dict_structure(response)
     else:
         first_week_dataSet = endpoint_builder(type, current_time, current_time - (7 * FULL_DAY_SECONDS))
  
@@ -29,14 +29,14 @@ def get_data(type, days = 7):
         second_week_dataset = endpoint_builder(type, new_time, end_time)
         
         
-    return dict_structure(first_week_dataSet,second_week_dataset)
+        return dict_structure(first_week_dataSet,second_week_dataset)
     # https://api.binance.com/api/v3/uiKlines
 
 def endpoint_builder(type, current_time, end_time):
     end_time = int(end_time) * 1000
     current_time = int(current_time) * 1000
 
-    return requests.get(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=1m&endTime={current_time}&startTime={end_time}").json()
+    return requests.get(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=15m&endTime={current_time}&startTime={end_time}").json()
 
 def dict_structure(*response):
     # array de datas
