@@ -17,6 +17,6 @@ from django.urls import path,include
 from core import views
 
 urlpatterns = [
-    path('news/',  include("news.urls")),
-    path('',  include("news.urls"))
+    path('',  include("app.urls"))
 ]
+    
