@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 from utils import get_data
 
-from constants import FULL_DAY_SECONDS
+from constants import FULL_DAY_MILLISECONDS
 
 load_dotenv()
 
@@ -23,8 +23,8 @@ def get_coins(type, days):
     data = get_data(type, days)
     
     return jsonify({
-        "from": int(datetime.datetime.now().timestamp() - ((14 if days > 14 else days) * FULL_DAY_SECONDS)),
-        "to": int(datetime.datetime.now().timestamp()),
+        "from": datetime.datetime.now().timestamp() - ((14 if days > 14 else days) * FULL_DAY_MILLISECONDS),
+        "to": datetime.datetime.now().timestamp(),
         "coin": type,
         "data" : data
     })

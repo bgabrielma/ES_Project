@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}Crypto is Cool{% endblock %}
+
+{% block links %}
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="ms-4 mt-4 me-4 ps-4 pe-4">
+            <h1>Crypto Coins</h1>
+            <hr />
+            {% if data|length == 0 %}
+                <div class="container-fluid">
+                    <div class="alert alert-info" role="alert">
+                    No results found when trying to access news service
+                    </div>
+                </div>
+            {% else %}
+                <canvas id="myChart"></canvas>
+                <hr />
+                <h6>Maximum value: <span class="badge bg-primary">{{maximum}} €</span></h6>
+                <h6 class="mt-4">Minimum value value: <span class="badge bg-primary">{{minimum}} €</span></h6>
+            {% endif %}
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+        const dataParsed = JSON.parse("{{data}}".replace(/&#x27;/gm, '"'));
+        const coin = "{{coin}}".toLowerCase();
+
+        const dataset = dataParsed.data
+        if (dataset) {
+            let btcChart = ctx.getContext("2d");
+
+            const chartAreaPlugin = {
+                beforeDraw: function (chart, easing) {
+                    if (chart.config.options.chartArea && chart.config.options.chartArea.backgroundColor) {
+                        var ctx = chart.ctx;
+                        var chartArea = chart.chartArea;
+                        
+                        let gradient = btcChart.createLinearGradient(0, 0, 0, 600);
+
+                        switch (coin) {
+                            case "btc":
+                                gradient.addColorStop(0, "rgba(247,147,26,.5)");
+                                gradient.addColorStop(0.425, "rgba(255,193,119,0)"); 
+                                break
+                            case "eth":
+                                gradient.addColorStop(0, 'rgba(78,56,216,.5)');
+                                gradient.addColorStop(.425, 'rgba(118,106,192,0)');
+                                break
+                            case "xrp":
+                                gradient.addColorStop(0, 'rgba(27,30,54,.5)');
+                                gradient.addColorStop(.425, 'rgba(46,49,72,0)');
+                                break
+                        }
+
+                        ctx.save();
+                        ctx.fillStyle = gradient;
+                        ctx.fillRect(chartArea.left, chartArea.top, chartArea.right - chartArea.left, chartArea.bottom - chartArea.top);
+                        ctx.restore();
+                    }
+                }
+            }
+
+            let borderColor = "";
+            switch (coin) {
+                case "btc":
+                    borderColor = "rgba(247,147,26, 1)";
+                    break
+                case "eth":
+                    borderColor = "rgba(78,56,216, 1)";
+                    break
+                case "xrp":
+                    borderColor = "rgba(27,30,54,1)";
+                    break
+            }
+            
+            new Chart(ctx, {
+            type: 'line',
+            plugins: [chartAreaPlugin],
+            data: {
+                labels: dataset[1],
+                datasets: [{
+                    label: `Coin Price for ${coin.toUpperCase()}`,
+                    data: dataset[0],
+                    borderColor,
+                    borderJoinStyle: 'round',
+                    borderCapStyle: 'round',
+                    borderWidth: 3,
+                    pointRadius: 0,
+                    pointHitRadius: 10,
+                    lineTension: .2,
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        type: 'time',
+                        time: {
+                            unit: 'day',
+                                displayFormats: {
+                                    'day': 'MM/dd/yyyy'
+                                }
+                            },
+                    },
+                },
+                chartArea: {
+                    backgroundColor: 'rgba(251, 85, 85, 0.4)'
+                }
+            }
+        });
+        }
+    </script>      
+{% endblock %}
