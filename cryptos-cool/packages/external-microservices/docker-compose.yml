@@ -5,7 +5,10 @@ services:
     ports:
       - "1001:8000"
     environment:
-        - NEWS_API=${NEWS_API}
+        - NEWS_API_1=${NEWS_API_1}
+        - NEWS_API_2=${NEWS_API_2}
+        - NEWS_API_3=${NEWS_API_3}
+        - NEWS_API_4=${NEWS_API_4}
     container_name: news_api
     volumes:
       - ./news/src:/app

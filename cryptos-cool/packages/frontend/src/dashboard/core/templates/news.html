@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Crypto is Cool{% endblock %}
+
+{% block links %}
+{% endblock %}
+
+{% block body %}
+  <div class="container-fluid">
+    <nav class="ms-4 mt-4 me-4 ps-4 pe-4 " aria-label="...">
+      <h1>Crypto News</h1>
+      <hr />
+      <ul class="pagination">
+
+        {% with ''|center:total_pages as range %}
+          {% for _ in range %}
+              {% if current_page == forloop.counter|stringformat:"i" %}
+                <li class="page-item active">
+                  <a class="page-link" href="/news?page={{forloop.counter}}">{{forloop.counter}} <span class="sr-only">(current)</span></a>
+                </li>
+              {% else %}
+                <li class="page-item">
+                  <a class="page-link" href="/news?page={{forloop.counter}}">{{forloop.counter}}</a>
+                </li>
+              {% endif %}
+          {% endfor %}
+        {% endwith %}
+      </ul>
+    </nav>
+
+    {% if news|length == 0 %}
+      <div class="container-fluid">
+        <div class="alert alert-info" role="alert">
+          No results found when trying to access news service
+        </div>
+      </div>
+    {% else %}
+      <ul class="list-group p-4">
+        {% for field in news %}
+        <a class="a-without-effects bg-secondary-subtle ms-4 mb-4 me-4 ps-4 pe-4 rounded border" href="{{ field.url }}" target="__blank">
+          <div class="d-flex align-items-center">
+            <div class="media mt-4 mb-4 flex-shrink-0 bg-body-secondary rounded" style="width: 200px; height: 130px;">
+              <img class="mr-3 rounded" style="width: 200px; height: 130px; object-fit: cover;" src="{{ field.urlToImage }}">
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <div class="media-body">
+                <h5 class="mt-0">{{ field.title }} </h5>
+                {{ field.content }}
+              </div>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+  
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+      document.querySelectorAll('img').forEach(function(img){
+        img.onerror = function() {
+          this.style.display='none';
+        };
+      })
+    });
+  </script>
+{% endblock %}
