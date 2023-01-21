@@ -6,7 +6,8 @@ from flask import Flask, jsonify
 from dotenv import load_dotenv
 
 from utils import get_data
-from constants import FULL_DAY_SECONDS
+
+from constants import FULL_DAY_MILLISECONDS
 
 load_dotenv()
 
@@ -22,11 +23,11 @@ def get_coins(type, days):
     data = get_data(type, days)
     
     return jsonify({
-        "from": int(datetime.datetime.now().timestamp() - (days * FULL_DAY_SECONDS)),
-        "to": int(datetime.datetime.now().timestamp()),
+        "from": datetime.datetime.now().timestamp() - ((14 if days > 14 else days) * FULL_DAY_MILLISECONDS),
+        "to": datetime.datetime.now().timestamp(),
         "coin": type,
         "data" : data
     })
 
 if __name__ == "__main__":
-    app.run(host="localhost", port=1000, debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)

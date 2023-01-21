@@ -3,34 +3,28 @@ import json
 import requests
 
 from collections import defaultdict
-from constants import FULL_DAY_SECONDS
+from constants import FULL_DAY_MILLISECONDS
 
 def get_data(type, days = 7):
     # 1 day = 86,400 seconds
     current_time = datetime.datetime.now().timestamp()
 
     if days <= 7:
-        end_time = current_time - (days * FULL_DAY_SECONDS)
+        end_time = current_time - (days * FULL_DAY_MILLISECONDS)
         response = endpoint_builder(type, current_time, end_time)
        
         return dict_structure(response)
     else:
-        first_week_dataSet = endpoint_builder(type, current_time, current_time - (7 * FULL_DAY_SECONDS))
+        first_week_dataSet = endpoint_builder(type, current_time, current_time - (7 * FULL_DAY_MILLISECONDS))
         # ex:
         # 12-7 = 5 days left
         remaing_days = (14 if days > 14 else days) - 7
         print("remaining days:",remaing_days)
         # new time where whe are going to start the new search after removing the 7 days
-        new_time = current_time - (7 * FULL_DAY_SECONDS)
-        print("new time:",new_time)
+        new_time = current_time - (7 * FULL_DAY_MILLISECONDS)
         # add the 5 missing days
-        end_time = new_time - (remaing_days * FULL_DAY_SECONDS)
-        print("end time:",end_time)
+        end_time = new_time - (remaing_days * FULL_DAY_MILLISECONDS)
         second_week_dataset = endpoint_builder(type, new_time, end_time)
-        
-        # if days are above 14 it regulates
-
-        
         
         return dict_structure(second_week_dataset, first_week_dataSet)
     # https://api.binance.com/api/v3/uiKlines
@@ -38,8 +32,8 @@ def get_data(type, days = 7):
 def endpoint_builder(type, current_time, end_time):
     end_time = int(end_time) * 1000
     current_time = int(current_time) * 1000
-    print(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=15m&endTime={current_time}&startTime={end_time}")
-    return requests.get(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=15m&endTime={current_time}&startTime={end_time}").json()
+
+    return requests.get(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=1h&endTime={current_time}&startTime={end_time}").json()
 
 def dict_structure(*response):
     # array de datas

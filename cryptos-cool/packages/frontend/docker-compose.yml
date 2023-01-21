@@ -1,0 +1,10 @@
+version: '3'
+services:
+  frontend:
+    build: src/
+    ports:
+      - "80:8000"
+    container_name: frontend
+    volumes:
+      - ./src:/app
+    
