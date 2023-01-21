@@ -36,7 +36,7 @@ def endpoint_builder(type, current_time, end_time):
     end_time = int(end_time) * 1000
     current_time = int(current_time) * 1000
 
-    return requests.get(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=15m&endTime={current_time}&startTime={end_time}").json()
+    return requests.get(f"https://api.binance.com/api/v3/uiKlines?symbol={type}EUR&interval=1h&endTime={current_time}&startTime={end_time}").json()
 
 def dict_structure(*response):
     # array de datas
