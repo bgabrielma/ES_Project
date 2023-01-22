@@ -11,6 +11,25 @@
         <div class="ms-4 mt-4 me-4 ps-4 pe-4">
             <h1>Crypto Coins</h1>
             <hr />
+            <form action="/coins" method="GET">
+                <select class="form-select" style="width:20%" name="type">
+                    {% for k in coins %}
+                        {% for key,value in k.items %}  
+                            {% if coin == key %}
+                                <option value="{{key}}" selected>{{value}}</option>
+                            {% else %}
+                                <option value="{{key}}" >{{value}}</option>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </select>
+                <div class="form-group">
+                <label >Number of days</label>
+                    <input type="number" class="form-control" id="days" placeholder="14" style="width:5%" name="days" value="14" min="1" required>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-dark ">Submit</button>
+            </form>
             {% if data|length == 0 %}
                 <div class="container-fluid">
                     <div class="alert alert-info" role="alert">
@@ -25,7 +44,7 @@
             {% endif %}
         </div>
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
     <script>
@@ -117,5 +136,6 @@
             }
         });
         }
-    </script>      
+    </script>
+  
 {% endblock %}

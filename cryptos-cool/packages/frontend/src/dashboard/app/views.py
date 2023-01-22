@@ -32,9 +32,12 @@ class Coins(View):
         self.template_name = "coins.html"
 
     def get(self, request):
-        coin = "ETH"
         
-        data = requests.get(f"http://host.docker.internal:2000/api/coins?type={coin}&days=14").json()
+
+        coin = request.GET.get('type', "BTC")
+        days = request.GET.get('days', 14)
+
+        data = requests.get(f"http://host.docker.internal:2000/api/coins?type={coin}&days={days}").json()
 
         if (data.get("error")):
             data = dict()
@@ -46,5 +49,7 @@ class Coins(View):
             "data": data,
             "coin": coin,
             "minimum": f"{minimum:0.4f}",
-            "maximum": f"{maximum:0.4f}"
+            "maximum": f"{maximum:0.4f}",
+            "coins":  [{"BTC": "Bitcoin"},{"ETH": "Etherium"},{"XRP": "Ripple"}]
+
         })
