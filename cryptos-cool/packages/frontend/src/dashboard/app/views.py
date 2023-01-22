@@ -32,8 +32,8 @@ class Coins(View):
         self.template_name = "coins.html"
 
     def get(self, request):
-        coin = "ETH"
         
+        coin = request.POST.get('type')
         data = requests.get(f"http://host.docker.internal:2000/api/coins?type={coin}&days=14").json()
 
         if (data.get("error")):

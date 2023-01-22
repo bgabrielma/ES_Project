@@ -25,7 +25,12 @@
             {% endif %}
         </div>
     </div>
-    
+    <div class="container">
+ 
+    <button id="btnetc"type="button" class="btn btn-primary btn-lg">Bitcoin</button>
+    <button id="btneth"type="button" class="btn btn-primary btn-lg">Etherium</button>
+    <button id="btnxrp"type="button" class="btn btn-primary btn-lg">Ripple</button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.0/dist/chart.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
     <script>
@@ -117,5 +122,54 @@
             }
         });
         }
+        $('#btnetc').click(function() {
+
+            /* this method sends a post request to the backend */
+          
+            $.ajax({
+              url : 'views.Coins.asview',
+              type : 'POST',
+              data : {
+                type : "BTC",
+                ...
+              },
+              success : function(response) {
+          
+                /* this method executes on a successful response from the backend */
+               
+                var message = response.message
+               
+                // do something with the message, route user to new page, close form
+                ...
+          
+              }
+          
+            });
+          });
+          $('#btn').click(function() {
+
+            /* this method sends a post request to the backend */
+          
+            $.ajax({
+              url : 'views.Coins.asview',
+              type : 'POST',
+              data : {
+                type : "BTC",
+                ...
+              },
+              success : function(response) {
+          
+                /* this method executes on a successful response from the backend */
+               
+                var message = response.message
+               
+                // do something with the message, route user to new page, close form
+                ...
+          
+              }
+          
+            });
+          });
+          
     </script>      
 {% endblock %}
