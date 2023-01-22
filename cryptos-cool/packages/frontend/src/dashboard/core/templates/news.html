@@ -10,6 +10,39 @@
     <nav class="ms-4 mt-4 me-4 ps-4 pe-4" aria-label="...">
       <h1>Crypto News</h1>
       <hr />
+      <form action="/news" method="GET">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="BTC" id="flexCheckDefault" name="btc" >
+          <label class="form-check-label" for="flexCheckDefault">
+            Bitcoin
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="ETH" id="flexCheckChecked" name="eth">
+          <label class="form-check-label" for="flexCheckChecked">
+            Etherium
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="XRP" id="flexCheckChecked" name="xrp">
+          <label class="form-check-label" for="flexCheckChecked">
+            Ripple
+          </label>
+        </div>
+        <div class="form-check">
+          <label for="start">Start date:</label>
+            <input type="date" id="start" name="start"
+                  value="2018-07-22"
+                  min="2018-01-01" max="2018-12-31">
+            </div>
+            <div class="form-check">
+              <label for="start">End date:</label>
+                <input type="date" id="start" name="start"
+                      value="2018-07-22"
+                      min="2018-01-01" max="2018-12-31">
+                </div>
+        <button type="submit" class="btn btn-dark ">Submit</button>
+      </form>
       <ul class="pagination">
 
         {% with ''|center:total_pages as range %}
