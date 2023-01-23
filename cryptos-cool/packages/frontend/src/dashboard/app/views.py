@@ -16,8 +16,7 @@ coins_dataset = [{"BTC": "Bitcoin"},{"ETH": "Etherium"},{"XRP": "Ripple"}]
 class News(View):
     # Espécie de "state"
     current_coins_filters = []
-    current_news_end_time = None
-    current_news_start_time = None
+    current_news_from_date = None
 
     def __init__(self):
         self.template_name = "news.html"
@@ -37,24 +36,24 @@ class News(View):
                 for key, _ in coins.items():
                     self.current_coins_filters.append(key)
                     
-    def update_start_end_time(self, request):
+    def update_from_date(self, request):
         # format YYYY-MM-DD
-        self.current_news_end_time = request.GET.get('end_date', (datetime.datetime.now() - timedelta(weeks=4.34812141)).strftime('%Y-%m-%d')) # meter default para 30 dias
+        self.current_news_from_date = request.GET.get('from_date', (datetime.datetime.now() - timedelta(weeks=4.34812141)).strftime('%Y-%m-%d')) # meter default para 30 dias
                     
     def get(self, request):
         data = dict()
         page = request.GET.get('page', "1")
     
         self.update_current_coins_filters(request)
-        self.update_start_end_time(request)
+        self.update_from_date(request)
 
         search_query = ""
         for coin in self.current_coins_filters:
             search_query += coin
             if coin != self.current_coins_filters[len(self.current_coins_filters) - 1]:
-                search_query += "%20AND%20"
+                search_query += "%20OR%20"
 
-        url = f"http://host.docker.internal:2000/api/news?search={search_query}&page={page}&from_date={self.current_news_end_time}"
+        url = f"http://host.docker.internal:2000/api/news?search={search_query}&page={page}&from_date={self.current_news_from_date}"
         data = requests.get(url).json()
         if (data.get("error")):
             data = dict()
@@ -68,8 +67,7 @@ class News(View):
             "current_coins_filters": self.current_coins_filters,
             "current_date": datetime.datetime.now().strftime('%Y-%m-%d'),
             "max_minimum_date": (datetime.datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d'),
-            "api_news_url": url,
-            "data_json": json.dumps(data)
+            "api_news_url": url
         })
 
 class Coins(View):
