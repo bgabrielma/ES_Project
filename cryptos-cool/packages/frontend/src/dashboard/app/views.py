@@ -55,6 +55,20 @@ class News(View):
 
         url = f"http://host.docker.internal:2000/api/news?search={search_query}&page={page}&from_date={self.current_news_from_date}"
         data = requests.get(url).json()
+        # "articles": 
+        # "pages": 
+        # "total_results":
+        newsdivided = {}
+        page = 1
+        number_of_items_per_page = 0
+        for news in data["articles"]:
+            
+            newsdivided["page_{page}"].update(news)
+            number_of_items_per_page += 1
+            if number_of_items_per_page >= 10:
+                number_of_items_per_page = 0
+                page += 1
+           
         if (data.get("error")):
             data = dict()
 
