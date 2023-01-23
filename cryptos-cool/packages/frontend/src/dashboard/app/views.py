@@ -10,42 +10,52 @@ from django.views.generic import TemplateView
 import requests
 import json
 import datetime
+from datetime import timedelta
 
+coins_dataset = [{"BTC": "Bitcoin"},{"ETH": "Etherium"},{"XRP": "Ripple"}]
 class News(View):
+    # Espécie de "state"
+    current_coins_filters = []
+    current_news_end_time = None
+    current_news_start_time = None
+
     def __init__(self):
-        self.template_name = "news.html" 
+        self.template_name = "news.html"
 
-    def concat(self, words, sep = "%20AND%20"):
-      
-        for word in words:  
-            if word == "None":
-                words.remove(word)
+    def update_current_coins_filters(self, request):
+        self.current_coins_filters.clear()
+        
+        for coins in coins_dataset:
+            for key, _ in coins.items():
+                option_value = request.GET.get(f"option_search_coin_{key}", None)
+                if option_value is not None:
+                    self.current_coins_filters.append(option_value)
 
-        value = sep.join(words)
-
-        return value
+        # Se não vier nenhuma das options, ativar todas as moedas
+        if (len(self.current_coins_filters) == 0):
+            for coins in coins_dataset:
+                for key, _ in coins.items():
+                    self.current_coins_filters.append(key)
+                    
+    def update_start_end_time(self, request):
+        # format YYYY-MM-DD
+        self.current_news_end_time = request.GET.get('end_date', (datetime.datetime.now() - timedelta(weeks=4.34812141)).strftime('%Y-%m-%d')) # meter default para 30 dias
+                    
     def get(self, request):
         data = dict()
         page = request.GET.get('page', "1")
-        start = request.GET.get('start', datetime.datetime.now().strftime('%Y-%m-%d'))
-        end = request.GET.get('end', datetime.datetime.now().strftime('%Y-%m-%d'))
-        bitcoin = request.GET.get('btc', None)
-        ripple = request.GET.get('xrp', None)
-        etherium = request.GET.get('eth', None)
-
-        # start = datetime.datetime(start)
-        # start.strftime('%Y-%m-%d')
-        # end = datetime.datetime(end)
-        # end.strftime('%Y-%m-%d')
     
-        if bitcoin is None and ripple is None and etherium is None:
-            search = "BTC"
-        else:
-            search = self.concat([str(bitcoin),str(ripple),str(etherium)])
-          
-      
-        data = requests.get(f"http://host.docker.internal:2000/api/news?search={search}&page={page}&from={start}&to={end}").json()
-        # data = requests.get(f"http://host.docker.internal:2000/api/news?search=crypto%20AND%20xrp%20AND%20btc&page={page}").json()
+        self.update_current_coins_filters(request)
+        self.update_start_end_time(request)
+
+        search_query = ""
+        for coin in self.current_coins_filters:
+            search_query += coin
+            if coin != self.current_coins_filters[len(self.current_coins_filters) - 1]:
+                search_query += "%20AND%20"
+
+        url = f"http://host.docker.internal:2000/api/news?search={search_query}&page={page}&from_date={self.current_news_end_time}"
+        data = requests.get(url).json()
         if (data.get("error")):
             data = dict()
 
@@ -53,8 +63,14 @@ class News(View):
             "news": data.get("articles", dict()),
             "total_pages": data.get("pages", 0),
             "current_page": page,
+            "search": search_query,
+            "coins": coins_dataset,
+            "current_coins_filters": self.current_coins_filters,
+            "current_date": datetime.datetime.now().strftime('%Y-%m-%d'),
+            "max_minimum_date": (datetime.datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d'),
+            "api_news_url": url,
+            "data_json": json.dumps(data)
         })
-
 
 class Coins(View):
     def __init__(self):
@@ -79,6 +95,5 @@ class Coins(View):
             "coin": coin,
             "minimum": f"{minimum:0.4f}",
             "maximum": f"{maximum:0.4f}",
-            "coins":  [{"BTC": "Bitcoin"},{"ETH": "Etherium"},{"XRP": "Ripple"}]
-
+            "coins": coins_dataset
         })

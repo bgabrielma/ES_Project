@@ -7,53 +7,64 @@
 
 {% block body %}
   <div class="container-fluid">
-    <nav class="ms-4 mt-4 me-4 ps-4 pe-4" aria-label="...">
+    {{coins}}
+    <br />
+    {{current_coins_filters}}
+    <br />
+    {{current_coins_filters_url}}
+    <br />
+    {{api_news_url}}
+    <br />
+    {{data_json}}
+    <div class="ms-4 mt-4 me-4 ps-4 pe-4">
       <h1>Crypto News</h1>
       <hr />
       <form action="/news" method="GET">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="BTC" id="flexCheckDefault" name="btc" >
-          <label class="form-check-label" for="flexCheckDefault">
-            Bitcoin
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="ETH" id="flexCheckChecked" name="eth">
-          <label class="form-check-label" for="flexCheckChecked">
-            Etherium
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="XRP" id="flexCheckChecked" name="xrp">
-          <label class="form-check-label" for="flexCheckChecked">
-            Ripple
-          </label>
-        </div>
-        <div class="form-check">
-          <label for="start">Start date:</label>
-            <input type="date" id="start" name="start"
-                  value="2018-07-22"
-                  min="2018-01-01" max="2018-12-31">
+        <div class="border rounded p-4 bg-body-secondary">
+          <div class="form-group"> 
+              {% for k in coins %}
+                {% for key, value in k.items %}
+                    {% if key in current_coins_filters %}
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="{{key}}" id="flexCheckDefault" name="option_search_coin_{{key}}" checked>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          {{value}}
+                        </label>
+                      </div>
+                    {% else %}
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="{{key}}" id="flexCheckDefault" name="option_search_coin_{{key}}">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          {{value}}
+                        </label>
+                      </div>
+                    {% endif %}
+                {% endfor %}
+              {% endfor %}
+          </div>
+          <div class="form-group mt-4 mb-4">
+            <div class="mb-3">
+              <label for="start">To date:</label>
+              <div class="col-sm-10">
+                <input class="mt-2" type="date" id="end_date" name="end_date" min="{{max_minimum_date}}" max="{{current_date}}" value="{{max_minimum_date}}">
+              </div>
             </div>
-            <div class="form-check">
-              <label for="start">End date:</label>
-                <input type="date" id="start" name="start"
-                      value="2018-07-22"
-                      min="2018-01-01" max="2018-12-31">
-                </div>
-        <button type="submit" class="btn btn-dark ">Submit</button>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </div>
       </form>
-      <ul class="pagination">
-
+      <ul class="pagination mt-4">
         {% with ''|center:total_pages as range %}
           {% for _ in range %}
               {% if current_page == forloop.counter|stringformat:"i" %}
                 <li class="page-item active">
-                  <a class="page-link" href="/news?page={{forloop.counter}}">{{forloop.counter}} <span class="sr-only">(current)</span></a>
+                  <a class="page-link" href="javascript:build_a_href_params('page', '{{forloop.counter}}')">{{forloop.counter}} <span class="sr-only">(current)</span></a>
                 </li>
               {% else %}
                 <li class="page-item">
-                  <a class="page-link" href="/news?page={{forloop.counter}}">{{forloop.counter}}</a>
+                  <a class="page-link" href="javascript:build_a_href_params('page', '{{forloop.counter}}')">{{forloop.counter}}</a>
                 </li>
               {% endif %}
           {% endfor %}
@@ -96,5 +107,28 @@
         };
       })
     });
+
+    function build_a_href_params(key, value) {
+      var searchParams = new URLSearchParams(window.location.search);
+      if (value != '')
+          searchParams.set(key, value);
+      else
+          searchParams.delete(key);
+      window.location.search = searchParams.toString();
+    }
+
+    function formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+
+        if (month.length < 2) 
+            month = '0' + month;
+        if (day.length < 2) 
+            day = '0' + day;
+
+        return [year, month, day].join('-');
+    }
   </script>
 {% endblock %}
