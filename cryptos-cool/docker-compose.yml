@@ -1,0 +1,38 @@
+version: '3'
+services:
+  news_api:
+    build: packages/external-microservices/news/src/
+    ports:
+      - "1001:8000"
+    environment:
+        - NEWS_API_1=${NEWS_API_1}
+        - NEWS_API_2=${NEWS_API_2}
+        - NEWS_API_3=${NEWS_API_3}
+        - NEWS_API_4=${NEWS_API_4}
+    container_name: news_api
+    volumes:
+      - ./packages/external-microservices/news/src/:/app
+  coins_api:
+    build: packages/external-microservices/coins/src/
+    ports:
+      - "1002:8000"
+    container_name: coins_api
+    volumes:
+      - ./packages/external-microservices/coins/src/:/app
+  frontend:
+    build: packages/frontend/src/
+    ports:
+      - "80:8000"
+    container_name: frontend
+    volumes:
+      - ./packages/frontend/src/:/app
+  api_gateway:
+    build: packages/api/src
+    ports:
+      - "2000:8000"
+    environment:
+        - NEWS_API_PRIVATE_CONTAINER_URL=${NEWS_API_PRIVATE_CONTAINER_URL}
+        - COINS_API_PRIVATE_CONTAINER_URL=${COINS_API_PRIVATE_CONTAINER_URL}
+    container_name: api_gateway
+    volumes:
+      - ./packages/api/src:/app
