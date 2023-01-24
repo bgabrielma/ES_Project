@@ -21,6 +21,17 @@ class News(View):
     def __init__(self):
         self.template_name = "news.html"
 
+    def pagination(self, data, newsdivided = {}, items_per_page = 10):
+        page = 1
+        number_of_items_per_page = 0
+        for news in data["articles"]:
+            
+            newsdivided["page_{page}"].update(news)
+            number_of_items_per_page += 1
+            if number_of_items_per_page >= items_per_page:
+                number_of_items_per_page = 0
+                page += 1
+        return newsdivided
     def update_current_coins_filters(self, request):
         self.current_coins_filters.clear()
         
@@ -58,16 +69,7 @@ class News(View):
         # "articles": 
         # "pages": 
         # "total_results":
-        newsdivided = {}
-        page = 1
-        number_of_items_per_page = 0
-        for news in data["articles"]:
-            
-            newsdivided["page_{page}"].update(news)
-            number_of_items_per_page += 1
-            if number_of_items_per_page >= 10:
-                number_of_items_per_page = 0
-                page += 1
+        newsdivided = self.pagination(data)
            
         if (data.get("error")):
             data = dict()
