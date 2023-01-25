@@ -2,7 +2,8 @@ import requests
 
 from flask import Flask, request as flask_request, jsonify
 from dotenv import load_dotenv
-from utils import build_url, get_api_keys, DEFAULT_PAGE_SIZE
+from utils import build_url, get_api_keys, filter_news_by_date, DEFAULT_PAGE_SIZE
+from datetime import datetime, timedelta
 
 load_dotenv()
 
@@ -16,7 +17,8 @@ def fetch_data(args):
         data:dict =  requests.get(url).json()
 
         if(data.get("code") != "rateLimited"):
-            return data
+            from_date = datetime.strptime(args.get("from_date", (datetime.today() - timedelta(weeks=12)).strftime('%Y-%m-%d')), '%Y-%m-%d')
+            return filter_news_by_date(data, from_date)
 
     return jsonify({"error": "rateLimited"})
 
@@ -26,19 +28,19 @@ def get_news():
     Args: 
         search -> Ex: crypto AND bitcoin
         page -> Ex: 1
-        from -> Ex> 2023-01-01. Must be in YYYY-MM-DD
-        to -> Ex> 2023-01-01. Must be in YYYY-MM-DD
+        from_date -> Ex> 2023-01-01. Must be in YYYY-MM-DD
     """
 
     data:dict = fetch_data(flask_request.args)
 
-    total_results = data.get("totalResults", 0)
-    total_pages = int(100 / DEFAULT_PAGE_SIZE)
+    articles = data.get("articles", [])
+    total_results = len(articles)
+    total_pages = round(float(total_results / DEFAULT_PAGE_SIZE))
 
     return jsonify({
         "articles": data.get("articles", []),
         "pages": total_pages,
-        "total_results": total_results
+        "total_results": 100 if total_results > 100 else total_results
     })
 
 if __name__ == "__main__":
