@@ -17,6 +17,7 @@ class News(View):
     # Espécie de "state"
     current_coins_filters = []
     current_news_from_date = None
+    default_items_per_page = 10
 
     def __init__(self):
         self.template_name = "news.html"
@@ -25,13 +26,26 @@ class News(View):
         page = 1
         number_of_items_per_page = 0
         for news in data["articles"]:
-            
             newsdivided["page_{page}"].update(news)
             number_of_items_per_page += 1
             if number_of_items_per_page >= items_per_page:
                 number_of_items_per_page = 0
                 page += 1
         return newsdivided
+    
+    def get_articles_per_page(self, data: dict, page = 1):
+        # page 1. 1 a 10 | 10 - 9 = 1
+        # page 2 11 a 20 | 20 - 9 = 11
+        # page 3 21 a 30 | 30 - 9 = 21
+        # page 4 31 a 40 | 40 - 9 = 31
+
+        initial_index = (page * self.default_items_per_page) - self.default_items_per_page
+        inicial_element_index = 1 if initial_index < 0 else initial_index
+        final_element_index = page * self.default_items_per_page
+
+        return data[inicial_element_index:final_element_index]
+
+    
     def update_current_coins_filters(self, request):
         self.current_coins_filters.clear()
         
@@ -69,13 +83,15 @@ class News(View):
         # "articles": 
         # "pages": 
         # "total_results":
-        newsdivided = self.pagination(data)
+        # newsdivided = self.pagination(data)
            
         if (data.get("error")):
             data = dict()
 
+        news = self.get_articles_per_page(data.get("articles", dict()), int(page))
+
         return render(request, self.template_name, {
-            "news": data.get("articles", dict()),
+            "news": news,
             "total_pages": data.get("pages", 0),
             "current_page": page,
             "search": search_query,
